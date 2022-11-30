@@ -1,0 +1,29 @@
+.front-card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2vh;
+}
+
+.back-card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+
+.projects-grid {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 1fr;
+	gap: 5vh;
+}
+
+.chakra-card {
+	height: 100%;
+}
+
+.chakra-card > div {
+	width: 100%;
+}

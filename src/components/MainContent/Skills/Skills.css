@@ -1,0 +1,29 @@
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+.skills-cloud-container {
+	display: grid;
+	padding: 10px;
+	min-height: 58vh;
+	height: fit-content;
+}
+
+.cloudtag {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cloudtag > div {
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+.item {
+	display: inline-flex;
+	align-items: center;
+}
