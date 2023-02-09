@@ -23,8 +23,6 @@ export const CloudRenderer: FC<tagType> = ({
 			width='max-content'
 			flexDir='row'
 			style={{
-				animation: 'blinker 5s linear infinite',
-				animationDelay: `${Math.random() * 4}s`,
 				border: `2px solid ${bgColor}`,
 				margin: '3px',
 				padding: '3px',

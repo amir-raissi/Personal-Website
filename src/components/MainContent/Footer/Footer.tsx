@@ -23,15 +23,15 @@ export const Footer: FC<Props> = ({ homeRef }) => {
 				</Tooltip>
 				<Flex ml='5vh' mr='5vh'>
 					<Text mt='5vh' fontSize='xs' fontWeight='bold'>
-						Website Designed by Amir Hossien Raissi | Copyright © 2022 Amir
-						Hossien Raissi | Code released under{' '}
+						Website Designed by Amir Hossien Raissi | Copyright ©{' '}
+						{new Date().getFullYear()} Amir Hossien Raissi | Code released under{' '}
 						<Link
 							href='https://github.com/amir-raissi/Personal-Website/blob/main/LICENSE'
 							color='#00B4D8'
 						>
 							MIT
 						</Link>{' '}
-						license | Last Updated: 30 November, 2022
+						license | Last Updated: 9 February, 2023
 					</Text>
 				</Flex>
 			</Flex>

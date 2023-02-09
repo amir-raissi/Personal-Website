@@ -15,7 +15,6 @@ import { Description } from '../shared/Description';
 import {
 	FaSchool,
 	FaCalendarAlt,
-	FaCalendar,
 	FaAtlas,
 	FaEnvelope,
 	FaBook,
@@ -57,8 +56,9 @@ function Opening() {
 				Amir Raissi
 			</Text>
 			<Text fontSize='md' display='inline'>
-				. I am a Senior at Colorado State University studying Computer Science.
-				I am an upcoming Software Engineer at Visa.
+				. I graduated from Colorado State University with a Bachelor of Science
+				in Computer Science and I am currently working as a Software Engineer at
+				Visa.
 			</Text>
 		</div>
 	);
@@ -68,8 +68,7 @@ function InfoGrid() {
 	return (
 		<div className='about-grid'>
 			<School />
-			<Year />
-			<ExpectedGraduationDate />
+			<GraduationDate />
 			<Major />
 			<Minor />
 			<Email />
@@ -112,18 +111,7 @@ function School() {
 	);
 }
 
-function Year() {
-	return (
-		<>
-			<IconDescription Icon={<FaCalendar />} iconLabel='Year' />
-			<Item>
-				<Text>Senior</Text>
-			</Item>
-		</>
-	);
-}
-
-function ExpectedGraduationDate() {
+function GraduationDate() {
 	return (
 		<>
 			<IconDescription Icon={<FaCalendarAlt />} iconLabel='Graduation Year' />

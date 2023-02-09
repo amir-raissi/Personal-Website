@@ -1,9 +1,3 @@
-@keyframes blinker {
-	50% {
-		opacity: 0;
-	}
-}
-
 .skills-cloud-container {
 	display: grid;
 	padding: 10px;
