@@ -220,15 +220,10 @@ export const openInNewTab = (url: string, toast: any) => {
 };
 
 export const downloadResume = () => {
-	const blob = new Blob([resume], { type: 'pdf' });
-	const link = document.createElement('a');
-	const url = URL.createObjectURL(blob);
-	link.href = url;
-	link.download = 'Amir Raissi Resume.pdf';
-	document.body.appendChild(link);
-	link.click();
-	setTimeout(() => {
-		document.body.removeChild(link);
-		window.URL.revokeObjectURL(url);
-	}, 0);
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'Amir Raissi Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 };

@@ -9,10 +9,10 @@ import {
 	SiJenkins,
 	SiVisualstudiocode,
 	SiJira,
-	SiEclipseide,
 	SiMicrosoftoffice,
 	SiPostman,
 	SiBitbucket,
+	SiIntellijidea,
 } from 'react-icons/si';
 
 export const ToolsCloud: FC = () => {
@@ -71,10 +71,10 @@ const toolsData: tagType[] = [
 		fontColor: 'white',
 	},
 	{
-		value: 'Eclipse',
+		value: 'IntelliJ',
 		count: 30,
-		icon: <SiEclipseide size={32} />,
-		bgColor: '#2A2051',
+		icon: <SiIntellijidea size={32} />,
+		bgColor: '#DD1265',
 		fontColor: 'white',
 	},
 	{

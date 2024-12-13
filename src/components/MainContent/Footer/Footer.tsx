@@ -31,7 +31,7 @@ export const Footer: FC<Props> = ({ homeRef }) => {
 						>
 							MIT
 						</Link>{' '}
-						license | Last Updated: 9 February, 2023
+						license | Last Updated: 12 December, 2024
 					</Text>
 				</Flex>
 			</Flex>

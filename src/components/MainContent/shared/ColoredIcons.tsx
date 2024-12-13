@@ -3,11 +3,12 @@ import {
 	SiCss3,
 	SiJava,
 	SiSpringboot,
-	SiMysql,
+	SiIntellijidea,
 	SiJenkins,
 	SiJira,
 	SiGithub,
 	SiMicrosoftoffice,
+	SiMysql,
 	SiVisualstudiocode,
 	SiEclipseide,
 	SiJquery,
@@ -24,6 +25,9 @@ import {
 	SiRedux,
 	SiWeb3Dotjs,
 	SiSolidity,
+	SiStorybook,
+	SiPython,
+	SiSass,
 } from 'react-icons/si';
 import { Tooltip } from '@chakra-ui/react';
 import { createIcon } from '@chakra-ui/react';
@@ -228,6 +232,38 @@ export const SolidityIcon = () => (
 	</Tooltip>
 );
 
+export const SCSSIcon = () => (
+	<Tooltip label='SCSS'>
+		<div>
+			<SiSass size='5vw' color='#CD6799' />
+		</div>
+	</Tooltip>
+)
+
+export const PythonIcon = () => (
+	<Tooltip label='Python'>
+		<div>
+			<SiPython size='5vw' color='#007EC6' />
+		</div>
+	</Tooltip>
+)
+
+export const IntellijIcon = () => (
+	<Tooltip label='IntelliJ IDEA'>
+		<div>
+			<SiIntellijidea size='5vw' color='#DD1265' />
+		</div>
+	</Tooltip>
+);
+
+export const StorybookIcon = () => (
+	<Tooltip label='Storybook'>
+		<div>
+			<SiStorybook size='5vw' color='#FF4785' />
+		</div>
+	</Tooltip>
+);
+
 export const BunIconPlain = createIcon({
 	displayName: 'Bun',
 	viewBox: '0 0 24 24',
@@ -243,6 +279,30 @@ export const BunIcon = () => (
 	<Tooltip label='Bun'>
 		<div>
 			<BunIconPlain boxSize={'5vw'} />
+		</div>
+	</Tooltip>
+);
+
+export const DB2IconPlain = createIcon({
+	displayName: 'DB2',
+	viewBox: '0 0 32 32',
+	path: (
+<>
+<path
+        d="M16 13c-3.4207 0 -6 1.5049 -6 3.5v8c0 1.9951 2.5793 3.5 6 3.5s6 -1.5049 6 -3.5v-8c0 -1.9951 -2.5793 -3.5 -6 -3.5Zm0 2c2.4814 0 4 0.9712 4 1.5S18.4814 18 16 18s-4 -0.9712 -4 -1.5 1.5186 -1.5 4 -1.5Zm0 11c-2.4814 0 -4 -0.9712 -4 -1.5v-1.3525c1.0469 0.5342 2.4331 0.8525 4 0.8525s2.9531 -0.3184 4 -0.8525V24.5c0 0.5288 -1.5186 1.5 -4 1.5Zm0 -4c-2.4814 0 -4 -0.9712 -4 -1.5v-1.3525c1.0469 0.5342 2.4331 0.8525 4 0.8525s2.9531 -0.3184 4 -0.8525V20.5c0 0.5288 -1.5186 1.5 -4 1.5Z"
+        fill="#000000" stroke-width="1"></path>
+    <path
+        d="M30 15.5c0 3.08 -2.14 5.65 -5.0099 6.3199V19.75C26.7401 19.13 28 17.47 28 15.5c0 -2.33 -1.83 -4.29 -4.15 -4.4801l-0.81 -0.0599 -0.1 -0.8099c-0.43 -3.5 -3.42 -6.15 -6.94 -6.15 -3.53 0 -6.52 2.65 -6.95 6.15l-0.1 0.8099 -0.81 0.0599C5.82 11.21 4 13.17 4 15.5c0 1.96 1.25 3.62 2.9901 4.24v2.08C4.1301 21.1401 2 18.57 2 15.5001c0 -3.1 2.22 -5.75 5.2 -6.36 0.86 -4.1201 4.52 -7.14 8.8 -7.14 4.27 0 7.9301 3.0199 8.8 7.14 2.97 0.61 5.2 3.26 5.2 6.36Z"
+        fill="#000000" stroke-width="1"></path>
+    <path id="_Transparent_Rectangle_" d="M0 0h32v32H0Z" fill="none" stroke-width="1"></path>
+</>
+	)
+});
+
+export const DB2Icon = () => (
+	<Tooltip label='DB2'>
+		<div>
+			<DB2IconPlain boxSize={'5vw'} />
 		</div>
 	</Tooltip>
 );

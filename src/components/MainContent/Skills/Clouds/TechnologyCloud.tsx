@@ -15,6 +15,7 @@ import {
 	SiJquery,
 	SiNestjs,
 	SiRedux,
+	SiStorybook,
 } from 'react-icons/si';
 import { BunIconPlain } from '../../shared/ColoredIcons';
 
@@ -122,4 +123,11 @@ const techData: tagType[] = [
 		bgColor: '#FBF0DF',
 		fontColor: 'black',
 	},
+	{
+		value: 'Storybook',
+		count: 30,
+		icon: <SiStorybook size={32} />,
+		bgColor: '#FF4785',
+		fontColor: 'white',
+	}
 ];

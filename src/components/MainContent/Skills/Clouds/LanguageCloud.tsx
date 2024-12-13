@@ -10,10 +10,12 @@ import {
 	SiCplusplus,
 	SiHtml5,
 	SiCss3,
+	SiSass,
 } from 'react-icons/si';
 import { tagType, CloudRenderer } from './CloudRenderer';
 //@ts-ignore
 import { TagCloud } from 'react-tagcloud';
+import { DB2IconPlain } from '../../shared/ColoredIcons';
 
 export const LanguageCloud: FC = () => {
 	return (
@@ -50,10 +52,17 @@ const langData: tagType[] = [
 		fontColor: 'white',
 	},
 	{
-		value: 'MySQL',
+		value: 'SCSS',
 		count: 30,
-		icon: <SiMysql size={32} />,
-		bgColor: '#003545',
+		icon: <SiSass size={32} />,
+		bgColor: '#CD6799',
+		fontColor: 'white',
+	},
+	{
+		value: 'DB2',
+		count: 30,
+		icon: <DB2IconPlain boxSize={8}/>,
+		bgColor: '#198038',
 		fontColor: 'white',
 	},
 	{
@@ -75,13 +84,6 @@ const langData: tagType[] = [
 		count: 30,
 		icon: <SiGnubash size={32} />,
 		bgColor: 'black',
-		fontColor: 'white',
-	},
-	{
-		value: 'C/C++',
-		count: 30,
-		icon: <SiCplusplus size={32} />,
-		bgColor: '#659BD3',
 		fontColor: 'white',
 	},
 	{
